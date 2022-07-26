@@ -9,9 +9,11 @@ switch (true){
 		break;
 	case grade >=70:
 		console.log("Grade is C");
+		console.log("Good job");
 		break;
 	case grade >=60:
 		console.log("Grade is D");
+		console.log("Good job");
 		break;
 	default:
 		console.log("Grade is F")			
