@@ -23,13 +23,24 @@ let weather = {
 		document.querySelector(".temp").innerText = temp + "°C"
 		document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%"
 		document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h"
+		document.querySelector(".weather").classList.remove("loading")
+		document.body.style.backgroundImage = "url('http://source.unsplash.com/1600x900/? " + name + "')"
 
 	},
 	search: function () {
-		this.fetchWhether(document.querySelectorAll(".search-bar").value)
+		this.fetchWhether(document.querySelector(".search-bar").value)
 	}
 }
 
-document.querySelector(".search button").addEventListener("click", function() {
+document.querySelector(".search button").addEventListener("click", function () {
 	weather.search()
 })
+
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+	if (event.key == "Enter") {
+		weather.search()
+	}
+})
+
+
+weather.fetchWhether("Tartu")
