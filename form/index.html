@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="inner-box" id="card">
+          <div class="card-front">
+            <h2>LOGIN</h2>
+            <form action="#" method="post">
+              <input
+                type="email"
+                class="input-box"
+                name="user_email"
+                placeholder="Your email id"
+                required
+              />
+
+              <input
+                type="password"
+                class="input-box"
+                name="user_email"
+                placeholder="Password"
+                required
+              />
+              <button type="submit" class="submit-btn">Submit</button>
+              <input type="checkbox" /> <span>Remember me</span>
+            </form>
+
+            <button type="button" class="btn" onclick="openRegister()">
+              I am New Here
+            </button>
+            <a href="#">Forget Password</a>
+          </div>
+          <div class="card-back">
+            <h2>REGISTER</h2>
+            <form action="#" method="post">
+              <input
+                type="text"
+                class="input-box"
+                name="user_name"
+                placeholder="Your name"
+                required
+              />
+
+              <input
+                type="email"
+                class="input-box"
+                name="user_email"
+                placeholder="Your email id"
+                required
+              />
+
+              <input
+                type="password"
+                class="input-box"
+                name="user_psw"
+                placeholder="Password"
+                required
+              />
+
+              <input
+                type="password"
+                class="input-box"
+                name="user_conf_psw"
+                placeholder="Confirm Password"
+                required
+              />
+
+              <button type="submit" class="submit-btn" onclick="openLogin()">
+                Submit
+              </button>
+              <input type="checkbox" /> <span>Remember me</span>
+            </form>
+
+            <button type="button" class="btn">I am New Here</button>
+            <a href="#">Forget Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

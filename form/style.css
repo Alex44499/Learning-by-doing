@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(133, 124, 210, 0.989);
+  color: #fff;
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  box-shadow: 0 0 40px 20px;
+  border-radius: 4%;
+  perspective: 1000px;
+}
+
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-back,
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(1, 20, 100, 0.7),
+      rgba(1, 20, 100, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1554832561-15aa2ef96da3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDY1MTc4NQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+  padding: 55px;
+  backface-visibility: hidden;
+  border-radius: 4%;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card h2 {
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 6px 0;
+  height: 32px;
+  border-radius: 20px;
+  padding: 0 10px;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  height: 32px;
+  margin: 35px 0 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 0 10px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn {
+  position: relative;
+}
+
+.submit-btn::after {
+  position: absolute;
+  content: "\27A4";
+  color: #333;
+  line-height: 32px;
+  font-size: 17px;
+  height: 32px;
+  width: 32px;
+  background: #fff;
+  right: -1px;
+  top: -1px;
+  border-radius: 50%;
+}
+
+span {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.card .btn {
+  margin-top: 70px;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
