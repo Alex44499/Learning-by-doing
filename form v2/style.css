@@ -71,90 +71,89 @@ h1 {
 .form-row input[type="email"]:invalid {
   border: 1px solid #d55c5f;
   color: #d55c5f;
-  box-shadow: none; /* Remove default red glow in Firefox */
+  box-shadow: none;
+  /* Remove default red glow in Firefox */
 }
 
 /* Radio buttons section */
 
 .legacy-form-row {
-	border: none;
-	margin-bottom: 40px;
- }
- 
- .legacy-form-row legend {
-	margin-bottom: 15px;
- }
- 
- .legacy-form-row .radio-label {
-	display: block;
-	font-size: 14px;
-	padding: 0 20px 0 10px;
- }
- 
- .legacy-form-row input[type='radio'] {
-	margin-top: 2px;
- }
-	
- .legacy-form-row .radio-label,
- .legacy-form-row input[type='radio'] {
-	float: left;
- }
+  border: none;
+  margin-bottom: 40px;
+}
 
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
 
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
 
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
 
- /* Dropdown menu */
- .form-row select {
-	width: 100%;
-	padding: 5px;
-	 font-size: 14px;       /*     This won't work in Chrome or Safari */
-	 -webkit-appearance: none;  /* This will make it work */
- }
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+}
+
+/* Dropdown menu */
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  /*     This won't work in Chrome or Safari */
+  -webkit-appearance: none;
+  /* This will make it work */
+}
 
 /* Text area */
 
 .form-row textarea {
-	font-family: "Helvetica", "Arial", sans-serif;
-	font-size: 14px;
- 
-	border: 1px solid #D6D9DC;
-	border-radius: 3px;
- 
-	min-height: 200px;
-	margin-bottom: 10px;
-	padding: 7px;
-	resize: none;
- }
- 
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
 .form-row .instructions {
-	color: #999999;
-	font-size: 14px;
-	margin-bottom: 30px;
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .form-row .checkbox-label {
-	margin-bottom: 0;
- }
+  margin-bottom: 0;
+}
 
- .form-row button {
-	font-size: 16px;
-	font-weight: bold;
- 
-	color: #FFFFFF;
-	background-color: #5995DA;
- 
-	border: none;
-	border-radius: 3px;
- 
-	padding: 10px 40px;
-	cursor: pointer;
- }
- 
- .form-row button:hover {
-	background-color: #76AEED;
- }
- 
- .form-row button:active {
-	background-color: #407FC7;
- }
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
 
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
